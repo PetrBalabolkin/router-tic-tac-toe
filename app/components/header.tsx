@@ -18,6 +18,9 @@ export default function Header() {
                     <NavLink to="/clicker" end className={({isActive}) => (isActive ? "font-bold" : "")}>
                         Clicker
                     </NavLink>
+                    <NavLink to="/faq" end className={({isActive}) => (isActive ? "font-bold" : "")}>
+                        FAQ
+                    </NavLink>
                 </nav>
                 <div>
                     Clicker State: {count}

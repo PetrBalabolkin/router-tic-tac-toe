@@ -9,6 +9,7 @@
     "typecheck": "react-router typegen && tsc"
   },
   "dependencies": {
+    "@headlessui/react": "^2.2.1",
     "@react-router/node": "^7.4.0",
     "@react-router/serve": "^7.4.0",
     "@reduxjs/toolkit": "^2.6.1",
