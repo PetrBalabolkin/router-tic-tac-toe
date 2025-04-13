@@ -3,11 +3,11 @@ import {useSelector} from "react-redux";
 import type {RootState} from "~/store";
 
 export default function Header() {
-    const count = useSelector((state: RootState) => state.clicker.value);
+    const count: number = useSelector((state: RootState) => state.clicker.value);
 
     return (
-        <header className="py-4 w-full shadow px-4">
-            <div className="flex ml-auto justify-between w-3/5">
+        <header className="py-4 w-full shadow px-10">
+            <div className="flex ml-auto justify-between">
                 <nav className="flex items-center justify-center gap-8">
                     <NavLink to="/" end className={({isActive}) => (isActive ? "font-bold" : "")}>
                         Home
@@ -20,6 +20,9 @@ export default function Header() {
                     </NavLink>
                     <NavLink to="/faq" end className={({isActive}) => (isActive ? "font-bold" : "")}>
                         FAQ
+                    </NavLink>
+                    <NavLink to="/httpCat"end className={({isActive}) => (isActive ? "font-bold" : "")}>
+                        Http Cat
                     </NavLink>
                 </nav>
                 <div>

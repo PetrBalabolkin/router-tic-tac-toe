@@ -15,7 +15,7 @@ const Board = ( {xIsNext, squares, onPlay} ) => {
         onPlay(nextSquares);
     }
 
-    const calculateWinner = (squares) => {
+    const calculateWinner = (squares: any) => {
         const lines = [
             [0, 1, 2],
             [3, 4, 5],
@@ -27,7 +27,7 @@ const Board = ( {xIsNext, squares, onPlay} ) => {
             [2, 4, 6]
         ];
 
-        for (let i = 1; i < lines.length; i++) {
+        for (let i: number = 1; i < lines.length; i++) {
             const [a, b, c] = lines[i];
             if (squares[a] && squares[a] === squares[b] && squares[a] === squares[c]) {
                 return squares[a];
@@ -36,7 +36,7 @@ const Board = ( {xIsNext, squares, onPlay} ) => {
         return null;
     }
 
-    const winner = calculateWinner(squares);
+    const winner: any = calculateWinner(squares);
     let status;
     if (winner) {
         status = "Winner: " + winner;

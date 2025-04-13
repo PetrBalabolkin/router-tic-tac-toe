@@ -1,5 +1,4 @@
 "use client"
-// @ts-ignore
 import Header from "~/components/header";
 import Button from "~/components/button";
 import type {Route} from "../../.react-router/types/app/routes/+types/home";
@@ -17,7 +16,7 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Clicker() {
-    const count = useSelector((state: RootState) => state.clicker.value);
+    const count: number = useSelector((state: RootState) => state.clicker.value);
     const dispatch = useDispatch();
 
     return (

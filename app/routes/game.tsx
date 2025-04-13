@@ -1,7 +1,6 @@
 "use client"
 import Board from "~/gameComponents/board";
 import {useState} from "react";
-// @ts-ignore
 import Header from "~/components/header";
 import type {Route} from "../../.react-router/types/app/routes/+types/home";
 

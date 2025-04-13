@@ -1,5 +1,13 @@
 import Header from "~/components/header";
 import {Disclosure, DisclosureButton, DisclosurePanel} from "@headlessui/react";
+import type {Route} from "../../.react-router/types/app/routes/+types/home";
+
+export function meta({}: Route.MetaArgs) {
+    return [
+        { title: "Faq" },
+        { name: "description", content: "Game to React Router!" },
+    ];
+}
 
 export default function faq() {
     return (
